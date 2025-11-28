@@ -32,7 +32,7 @@ function App() {
         <div className="emoji-row">⛵ 🌊 ⚓ 🚢 🌊 ⛵</div>
         <h1>⚓ KAPTAN ÖRSAN, RAPORU UNUTMA! 🌊</h1>
         <p className="apprentice">🧑‍✈️ Çırak Ömer senden rapor bekliyor, kaptan!</p>
-        <p className="subtitle">Raporları saat 13.00’ten önce göndermeyi unutursan gemi limandan ayrılıyor! ⛴️</p>
+        <p className="subtitle">Raporları saat 14.00’ten önce göndermeyi unutursan gemi limandan ayrılıyor! ⛴️</p>
 
         <div className="countdown">
           <span className="label">Kalan süre:</span>
@@ -82,7 +82,7 @@ function App() {
 
         {excuse && <div className="bubble">{excuse}</div>}
 
-        <p className="note">Bu güverte motivasyon istasyonudur: Raporu 13:00’ten önce at, liman alkışlasın! 🛳️</p>
+        <p className="note">Bu güverte motivasyon istasyonudur: Raporu 14:00’ten önce at, liman alkışlasın! 🛳️</p>
 
         <ul className="list">
           <li>✅ Köprüüstü kahveleri hazır</li>
@@ -118,7 +118,7 @@ function App() {
 function getRemainingMs() {
   const now = new Date()
   const target = new Date(now)
-  target.setHours(13, 0, 0, 0)
+  target.setHours(14, 0, 0, 0)
   const diff = target.getTime() - now.getTime()
   return diff > 0 ? diff : 0
 }

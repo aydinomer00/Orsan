@@ -11,9 +11,8 @@ body {
   min-height: 100vh;
   min-height: 100dvh;
   min-height: 100svh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
   padding: 24px;
   padding-bottom: calc(24px + env(safe-area-inset-bottom));
   overflow-y: auto;
@@ -30,6 +29,7 @@ body {
   backdrop-filter: blur(6px);
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  margin: 16px auto;
 }
 h1 { animation: sway 3s ease-in-out infinite alternate; }
 h1 {
@@ -129,7 +129,7 @@ h1 {
 @media (max-width: 480px) {
   h1 { font-size: 1.6rem; }
   .subtitle { font-size: 0.98rem; }
-  .card { padding: 24px 20px; }
+  .card { padding: 22px 18px; margin: 18px auto; }
   .message { font-size: 1rem; }
   .list { grid-template-columns: 1fr; }
   .note { opacity: 1; }
