@@ -1,0 +1,5 @@
+{
+  "version": 2,
+  "buildCommand": "cd orsan-reminder && npm ci && npm run build",
+  "outputDirectory": "orsan-reminder/dist"
+}
